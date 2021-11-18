@@ -1,0 +1,12 @@
+<!-- App Header -->
+<app-header [title]="title"></app-header>
+<mat-sidenav-container class="sidenav-container">
+
+  <!-- Material menu Sidenav, here is implemented the menu -->
+  <mat-sidenav class="mat-sidenav" mode="side" opened>
+    <app-menu></app-menu>
+  </mat-sidenav>
+
+  <!-- Another content, right side -->
+  <mat-sidenav-content><app-main-content></app-main-content></mat-sidenav-content>
+</mat-sidenav-container>

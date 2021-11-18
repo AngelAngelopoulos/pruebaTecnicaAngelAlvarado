@@ -1,0 +1,12 @@
+.title {
+  font-weight: bold;
+  text-align: center;
+  padding: 10% 20% 0 20%;
+}
+
+.description {
+  text-align: justify;
+  font-weight: bold;
+  padding: 5%;
+
+}

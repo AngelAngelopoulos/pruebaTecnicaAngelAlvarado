@@ -1,0 +1,26 @@
+<!--Iterating a Menu item, with a recursive structure, with Menu items inside-->
+<mat-expansion-panel hideToggle *ngFor="let item of menu">
+
+  <!--Content of the menu (Icon, name and Badge)-->
+  <mat-expansion-panel-header>
+    <mat-panel-title class="mat-panel-title">
+
+      <!--Inside title, we write the name and print the icon-->
+      <div class="container-text-icon">
+        <div [style]="{padding: '20px'}">
+          <i class="{{ item.icon }}"></i>
+        </div>
+        <p>{{ item.name }}</p>
+      </div>
+
+      <!--Then, badge is added-->
+      <div *ngIf="item.badge" class="badge-item">{{ item.badge }}</div>
+
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <!--Recursive call to this element with the nested Menu object-->
+  <app-menu-item [menu]="item.menu"></app-menu-item>
+
+</mat-expansion-panel>
+

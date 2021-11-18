@@ -1,0 +1,31 @@
+
+/*
+* Panel expansion styles
+*/
+.mat-panel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+* Icon and text container styles
+*/
+.container-text-icon {
+  display: flex;
+  align-items: baseline;
+}
+
+/*
+* Badge generation
+*/
+.badge-item {
+  background-color: #cacaca;
+  color: #0f0f0f;
+  width: 24px;
+  height: 24px;
+  align-items: baseline;
+  border-radius: 25%;
+  padding: 2px;
+  text-align: center;
+}
